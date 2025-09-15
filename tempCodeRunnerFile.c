@@ -1,22 +1,23 @@
-#include <stdio.h>
+/*Write a program to determine whether a character entered by the user is
+lowercase or not*/
 
-int main() {
-    char grade;
-    int marks = 46;
+#include<stdio.h>
+    int main()
+    {
+      char ch;
+      printf("Enter the character:");
+      scanf("%c", &ch);
+      if(ch>='a' && ch<='z')
+      {
+        printf("The character entered is a lowercase character.\n");
+      }
+      else if(ch>='A' && ch<='z')
+      {
+        printf("The character entered is not a lowercase character.\n");
+      }
+      else
+      {
+        printf("The input is invalid.\n");
+      }
 
-    if (marks <= 100 && marks > 90) {
-        grade = 'A';
-    }
-    else if (marks <= 90 && marks > 80) {
-        grade = 'B';
-    }
-    else if (marks <= 80 && marks > 70) {
-        grade = 'C';
-    }
-    else if (marks <= 70 && marks > 60) {
-        grade = 'D';
-    }
-    else if (marks <= 60 && marks >= 50) {
-        grade = 'E';
-    }
-    else {
+        return 

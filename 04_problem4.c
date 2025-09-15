@@ -1,8 +1,25 @@
 #include<stdio.h>
-    int main()
-    {
+     int main()
+     {
+      int year;
+      printf("Enter the year: ");
+      scanf("%d", &year);
+      if(year%400==0)
+      {
+        printf("The year %d is a leap year.\n");
+      }
+      else if(year%100==0)
+      {
+        printf("The year %d is not a leap year.\n");
+      }
+      else if(year%4==0)
+      {
+        printf("The year %d is a leap year.\n");
+      }
+      else
+      {
+        printf("The year %d is not a leap year.\n");
+      }
 
-       int x=2, y=3, z=3, k=1;
-       printf("Evaluation of the given mathematical statement is %f", 3*x/y-z+k);
         return 0;
-    }
+     }
